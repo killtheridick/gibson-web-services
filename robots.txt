@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://killtheridick.github.io/gibson-web-services/sitemap.xml
