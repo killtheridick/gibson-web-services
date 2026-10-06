@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Website QA Report | Gibson Web QA</title>
+  <meta name="description" content="See the structure and level of detail included in a Gibson Web QA website audit report.">
+  <link rel="canonical" href="https://killtheridick.github.io/gibson-web-services/sample-report.html">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #dbe3ec;
+      --accent: #0f766e;
+      --high: #b91c1c;
+      --medium: #b45309;
+      --low: #0369a1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    a { color: inherit; }
+    .brand { text-decoration: none; font-weight: 800; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 9px;
+      font-weight: 760;
+    }
+    main { padding: 54px 0 72px; }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      line-height: 1;
+      letter-spacing: -.045em;
+      margin: 0 0 16px;
+    }
+    .lead {
+      font-size: 1.12rem;
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+    .notice {
+      background: #ecfeff;
+      border: 1px solid #a5f3fc;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 26px;
+    }
+    .report {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    .report-head {
+      padding: 26px;
+      background: #0f172a;
+      color: white;
+    }
+    .report-head p { margin-bottom: 0; color: #cbd5e1; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .metric {
+      background: white;
+      padding: 18px;
+      text-align: center;
+    }
+    .metric strong {
+      display: block;
+      font-size: 1.5rem;
+    }
+    .body { padding: 26px; }
+    .finding {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+    .finding h3 { margin: 0 0 8px; }
+    .sev {
+      display: inline-block;
+      font-size: .76rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-right: 8px;
+    }
+    .medium { color: var(--medium); }
+    .low { color: var(--low); }
+    code {
+      background: #f1f5f9;
+      padding: 2px 5px;
+      border-radius: 5px;
+      font-size: .9em;
+    }
+    .muted { color: var(--muted); }
+    .next {
+      margin-top: 26px;
+      padding: 22px;
+      border-radius: 14px;
+      background: #f0fdfa;
+      border: 1px solid #99f6e4;
+    }
+    footer {
+      color: var(--muted);
+      padding: 24px 0 40px;
+      font-size: .92rem;
+    }
+    @media (max-width: 600px) {
+      .summary { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="./">Gibson Web QA</a>
+      <a class="button" href="https://buy.stripe.com/14A28r1se8lAbGi26h4F200">Buy $50 audit</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Sample website QA report</h1>
+    <p class="lead">This shows the format and level of detail a customer can expect. The findings below are illustrative examples, not claims about a real customer website.</p>
+
+    <div class="notice">
+      <strong>Example only:</strong> names, URLs, and findings on this page are deliberately fictional so no customer is misrepresented.
+    </div>
+
+    <article class="report">
+      <div class="report-head">
+        <h2>Example Small Business — Public Website QA</h2>
+        <p>Scope: public pages only · No login access · Read-only review</p>
+      </div>
+
+      <div class="summary">
+        <div class="metric"><strong>7</strong><span class="muted">pages reviewed</span></div>
+        <div class="metric"><strong>3</strong><span class="muted">example findings</span></div>
+        <div class="metric"><strong>0</strong><span class="muted">changes made</span></div>
+      </div>
+
+      <div class="body">
+        <h2>Prioritized findings</h2>
+
+        <section class="finding">
+          <h3><span class="sev medium">Medium</span>Several service images are missing useful alt text</h3>
+          <p><strong>Example affected page:</strong> <code>/services/example-service</code></p>
+          <p>Images that communicate meaningful content should have text alternatives. Missing alt text can make the page harder to understand for visitors using screen readers and can reduce the usefulness of image context.</p>
+          <p><strong>Recommended review:</strong> Identify which images convey information and add concise alt text that describes their purpose. Decorative images can remain intentionally empty.</p>
+        </section>
+
+        <section class="finding">
+          <h3><span class="sev medium">Medium</span>A service page has no clear main heading</h3>
+          <p><strong>Example affected page:</strong> <code>/services/example-repair</code></p>
+          <p>The page appears to begin with supporting copy but lacks a clear page-level heading. A strong heading helps visitors and assistive technology understand the page topic quickly.</p>
+          <p><strong>Recommended review:</strong> Add one descriptive main heading that accurately names the service offered on that page.</p>
+        </section>
+
+        <section class="finding">
+          <h3><span class="sev low">Low</span>Two page titles are overly similar</h3>
+          <p><strong>Example affected pages:</strong> <code>/about</code> and <code>/services</code></p>
+          <p>Page titles should help people distinguish pages in browser tabs and search results. Repeated or vague titles make that harder.</p>
+          <p><strong>Recommended review:</strong> Give each important page a concise title that reflects its specific content and the business name where useful.</p>
+        </section>
+
+        <div class="next">
+          <h2>Suggested next actions</h2>
+          <ol>
+            <li>Review the medium-priority structural and accessibility findings first.</li>
+            <li>Confirm which image issues are meaningful versus intentionally decorative.</li>
+            <li>Clean up page titles after the higher-impact items are resolved.</li>
+          </ol>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="./">Back to Gibson Web QA & Automation</a>
+    </div>
+  </footer>
+</body>
+</html>
