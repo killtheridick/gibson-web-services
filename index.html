@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gibson Web QA & Automation</title>
+  <meta name="description" content="Website QA audits, small web fixes, and lightweight Python automation for small businesses.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #16181d;
+      --muted: #5b6470;
+      --line: #dfe3e8;
+      --accent: #111827;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 72px 0 40px;
+      border-bottom: 1px solid var(--line);
+      background: var(--card);
+    }
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 4.4rem);
+      line-height: 1;
+      margin: 0 0 20px;
+      letter-spacing: -0.04em;
+    }
+    .lead {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin: 0;
+    }
+    main { padding: 42px 0 64px; }
+    h2 { margin-top: 0; font-size: 1.65rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin: 24px 0 44px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .price {
+      font-weight: 700;
+      margin: 8px 0 14px;
+      font-size: 1.1rem;
+    }
+    ul { padding-left: 20px; }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px;
+      margin-top: 18px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 11px 16px;
+      border-radius: 9px;
+      font-weight: 650;
+    }
+    footer {
+      padding: 26px 0 40px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+    footer a { color: inherit; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding-top: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Gibson Web QA & Automation</h1>
+      <p class="lead">Practical website QA, small web fixes, and lightweight Python automation for small businesses. Clear scope, fixed pricing where possible, and no unnecessary access.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>Services</h2>
+
+    <div class="grid">
+      <section class="card">
+        <h3>Website QA Audit</h3>
+        <div class="price">$50 fixed price</div>
+        <p>A public, read-only review of your website with a prioritized report.</p>
+        <ul>
+          <li>Heading and page-structure checks</li>
+          <li>Missing or empty image alt text</li>
+          <li>Duplicate or weak page titles</li>
+          <li>Broken or suspicious links</li>
+          <li>Basic accessibility and usability issues</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Python / CSV Automation</h3>
+        <div class="price">$50–$150</div>
+        <p>Small fixed-scope automation for repetitive data and file-processing work.</p>
+        <ul>
+          <li>CSV cleanup and deduplication</li>
+          <li>Header and field normalization</li>
+          <li>Simple data transformation</li>
+          <li>Small Python utilities</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Small Website Fixes</h3>
+        <div class="price">$75–$200</div>
+        <p>Narrow, authorized fixes after scope is agreed.</p>
+        <ul>
+          <li>Heading structure</li>
+          <li>Alt text</li>
+          <li>Page-title cleanup</li>
+          <li>Simple HTML/CSS defects</li>
+          <li>Small accessibility improvements</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="section">
+      <h2>How it works</h2>
+      <p>Send the public website URL or describe the task. I confirm the scope and price before work begins. Payment is handled securely through Stripe, then I deliver the agreed report, files, or fix.</p>
+      <p>Public website audits are read-only and do not require login access. Changes to a website or system are made only with explicit authorization.</p>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> brandon.danegibby@gmail.com</p>
+      <p>Kansas City area, Missouri, USA</p>
+      <a class="button" href="mailto:brandon.danegibby@gmail.com?subject=Website%20QA%20or%20Automation%20Inquiry">Email Brandon</a>
+    </section>
+
+    <section class="section">
+      <h2>Business practices</h2>
+      <p>Work is limited to systems, websites, and data the customer owns or is authorized to use. Scope, delivery timing, and any cancellation or refund terms are confirmed before payment for the specific job.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Independent web QA and automation services · <a href="privacy.html">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>
