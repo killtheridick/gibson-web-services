@@ -17,6 +17,8 @@ A public, read-only website review with a prioritized report covering issues suc
 
 No login access is required, and no changes are made during the audit.
 
+**Buy the $50 audit:** https://buy.stripe.com/14A28r1se8lAbGi26h4F200
+
 ### Small Python / CSV Automation — $50–$150
 
 Fixed-scope automation for repetitive data tasks, including:
